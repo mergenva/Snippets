@@ -76,6 +76,11 @@
         <div class="row">
             <div class="col-4 offset-2">
                 Список сниппетов:
+                <ol>
+                {% for snippet in snippets %}
+                    <li>{{ snippet.name }}</li>
+                {% endfor %}
+                    </ol>
             </div>
         </div>
     </div>
